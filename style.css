@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: black;
+     overflow-x: hidden;
+     margin: 0;
+     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.main {
+
+     background-image: url(assets/images/bg.jpg);
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* background-size: (1200px, 100vw); */
+     background-position: center center;
+     position: relative;
+
+
+}
+
+.main .box {
+     height: 100vh;
+     width: 100%;
+     background-color: black;
+     opacity: 0.80;
+     position: absolute;
+     top: 0;
+
+}
+
+nav {
+     width: 80vw;
+     display: flex;
+     justify-content: space-between;
+     margin: auto;
+     align-items: center;
+     height: 100px;
+}
+
+nav img {
+     padding: auto;
+     width: 154px;
+     position: relative;
+     z-index: 11;
+}
+
+nav button {
+     position: relative;
+     z-index: 10;
+}
+
+.hero {
+     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+     src: url(assets/NetflixSans-Bold.otf);
+     height: calc(100%-62px);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     color: white;
+     position: relative;
+     gap: 22px;
+     padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+     font-weight: 900;
+     font-size: 56px;
+     text-align: center;
+     padding-top: 16vh;
+}
+
+.hero> :nth-child(2) {
+     font-weight: 500;
+     font-size: 20px;
+     text-align: center;
+}
+
+.hero> :nth-child(3) {
+     font-weight: 400;
+     font-size: 20px;
+     text-align: center;
+}
+
+.curve-in {
+     height: 130px;
+     right: -5%;
+     left: -4%;
+     overflow: hidden;
+     width: 110vw;
+     background: linear-gradient(to right,
+               black,
+               rgb(173, 61, 123),
+               red,
+               rgb(173, 61, 123),
+               black);
+     position: relative;
+     border-top-left-radius: 50%;
+     border-top-right-radius: 50%;
+     /* overflow: hidden;     */
+     box-shadow: 0px 200px 0px 200px black;
+     top: 23%
+}
+
+
+.curve-out {
+     height: 130px;
+     width: 100%;
+     background: radial-gradient(ellipse at 50% 0%, #192666f7 -14%, black 50%);
+     position: absolute;
+     top: 3px;
+     left: 0;
+     border-top-left-radius: 60%;
+     border-top-right-radius: 60%;
+}
+
+
+
+.btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 1px solid rgb(150, 144, 144);
+     font-size: 15px;
+     padding: 16px 17px 16px 19px;
+     color: white;
+     font-weight: bold;
+     background-color: rgba(23, 23, 23, 0.7);
+     border-radius: 4px;
+
+}
+.btn-red-sm:hover{
+     cursor: pointer;
+     background-color: rgb(192, 8, 8);
+     transition: background-color .2s ease-in;
+}
+
+
+.btn-red-sm {
+     align-items: center;
+     justify-content: center;
+     background-color: red;
+     font-size: 15px;
+     padding: 7px 12px 26px 12px;
+     color: white;
+     font-weight: bold;
+     border-radius: 4px;
+     border: none;
+}
+
+.input1 {
+     margin-left: -5px;
+     display: flex;
+     gap: 8px;
+     align-items: center;
+}
+.btn-red:hover{
+     cursor: pointer;
+     background-color: rgb(192, 8, 8);
+     transition: background-color .2s ease-in;
+}
+
+.btn-red {
+     display: flex;
+     justify-content: space-between;
+     background-color: red;
+     color: white;
+     height: 50px;
+     font-size: 24px;
+     font-weight: 500;
+     font-style: bolder;
+     border: none;
+     border-radius: 4px;
+     padding: 13px 22px 41px 30px;
+     gap: 2px;
+
+}
+
+.arrow {
+     margin-left: 10px;
+}
+
+
+
+.main input::placeholder {
+     color: rgb(134, 128, 128);
+     opacity: 1;
+     /* Firefox browser by default placeholder ko thoda transparent kar deta hai, isliye ye lagana zaruri hai */
+}
+
+.main input {
+     border: 1px solid rgb(97, 95, 95);
+     color: white;
+     font-size: 16px;
+     font-weight: 400;
+     font-style: bolder;
+     height: 50px;
+
+     border-radius: 4px;
+     padding: 25px 160px 27px 15px;
+     /* box-sizing: border-box; */
+     background-color: rgba(23, 23, 23, 0.7);
+}
+
+
+.hero-buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+}
+
+.hero-buttons button {
+     height: 30px;
+}
+
+/* .container{
+     
+} */
+
+.head1 h2 {
+     position: relative;
+     margin-top: 7%;
+     margin-left: 10.5%;
+     z-index: 10;
+     color: white;
+     font-style: bold;
+     opacity: 1;
+}
+
+.cards {
+     position: relative;
+     margin-left: 3%;
+     height: 18em;
+
+}
+
+.scrolling {
+     position: relative;
+     margin-top: 2%;
+     overflow-x: auto;
+     overflow-y: hidden;
+     width: 80%;
+     display: flex;
+     margin-left: 8%;
+     gap: 2em;
+}
+
+.scrolling::-webkit-scrollbar {
+     display: none;
+}
+
+.scrolling li {
+     left: 25px;
+}
+
+
+.card {
+     position: relative;
+     height: 16em;
+     width: 12em;
+     padding: 10px 10px 10px 10px;
+     flex: 0 0 12em;
+     background-color: black;
+     border-radius: .7em;
+     text-align: center;
+     align-content: center;
+     z-index: 10;
+     opacity: 1;
+}
+.card img{
+     position: relative;
+     height: 16em;
+}
+a:hover{
+     cursor: pointer;
+}
+.scrolling li:hover{
+     cursor: pointer;
+     transform: scale(1.07);
+     transition: transform .5s ease;
+}
+
+.card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 5%;
+
+}
+
+.card span {
+     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+     left: -16px;
+     bottom: 4%;
+     position: absolute;
+     opacity: 1;
+     object-fit: cover;
+     z-index: 20;
+     font-size: 100px;
+     color: black;
+     font-weight: 900;
+     height: 100px;
+     width: 50px;
+     -webkit-text-stroke: 2px white;
+
+     line-height: 1;
+}
+
+.head2 h2 {
+     position: relative;
+     margin-top: 4%;
+     margin-left: 10.5%;
+     z-index: 10;
+     color: white;
+     font-style: bold;
+     opacity: 1;
+}
+
+.boxes {
+     margin-left: 10.5%;
+     display: flex;
+     gap: 1%;
+}
+
+.squares {
+     margin-top: 2%;
+     position: relative;
+     width: 22%;
+     height: 48%;
+     border-radius: 5%;
+     opacity: 0.80;
+     font-style: normal;
+     color: white;
+     font-weight: 400;
+     font-size: 16px;
+     background: linear-gradient(135deg, #231C4B 0%, #190f21 100%);
+}
+
+.squares> :nth-child(1) {
+     margin-left: 15px;
+     margin-top: 20px;
+     margin-right: 15px;
+     font-size: 20px;
+}
+
+.squares> :nth-child(2) {
+     margin-top: 10px;
+     margin-right: 15px;
+     margin-left: 15px;
+}
+
+.icon1 {
+     position: relative;
+     width: 65px;
+     height: 60px;
+     margin-top: 60px;
+     margin-left: 70%;
+     margin-bottom: 5%;
+     opacity: 1;
+     z-index: 10;
+}
+
+.icon2 {
+     position: relative;
+     width: 65px;
+     height: 65px;
+     margin-top: 45px;
+     margin-left: 70%;
+     margin-bottom: 5%;
+     opacity: 1;
+     z-index: 10;
+}
+
+.icon3 {
+     position: relative;
+     width: 65px;
+     height: 60px;
+     margin-top: 60px;
+     margin-left: 70%;
+     margin-bottom: 5%;
+     opacity: 1;
+     z-index: 10;
+}
+
+.icon4 {
+     position: relative;
+     width: 65px;
+     height: 60px;
+     margin-top: 40px;
+     margin-left: 70%;
+     margin-bottom: 5%;
+     opacity: 1;
+     z-index: 10;
+}
+
+.box2 {
+     margin-left: 10.5%;
+     color: white;
+     margin-top: 4%;
+     opacity: 1;
+}
+
+ul {
+     list-style: none;
+}
+
+.ques {
+     width: 100%;
+}
+
+.qlist {
+     margin-top: 20px;
+
+     height: 100px;
+}
+
+.qlist li {
+     padding-top: .5%;
+
+}
+.qlist > li > h3 > button:hover{
+     cursor: pointer;
+     background-color: rgb(99, 96, 96);
+     transition: background-color .4s ease-out;
+}
+
+.qlist >li > h3 > button {
+     font-size: 24px;
+     font-weight: 400;
+     display: flex;
+     width: 91.5%;
+     align-items: center;
+     background-color: rgba(61, 60, 60, 0.804);
+     color: white;
+     border: none;
+     padding: 30px 28px 28px 30px;
+     font-size: 20px;
+     justify-content: space-between;
+}
+
+.box3 {
+     position: relative;
+     margin-top: 32%;
+     margin-left: 10.5%;
+     opacity: 1;
+     color: white;
+}
+
+.box3 h3 {
+     font-size: 16px;
+     font-weight: 400;
+     position: relative;
+     margin-left: 26%;
+     padding-bottom: 1%;
+}
+
+.input2 {
+     display: flex;
+     gap: .5%;
+     margin-left: 17%;
+}
+
+.input2 input {
+     padding: 25px 30% 27px 15px;
+}
+
+.references {
+     margin-top: 4%;
+     margin-left: 10.5%;
+     color: rgba(255, 255, 255, 0.7);
+}
+.contact{
+     font-weight: 400;
+     font-size: 16px;
+}
+
+.contact a {
+     color: rgba(255, 255, 255, 0.7);
+}
+
+.box4 {
+     margin-top: 3%;
+     display: flex;
+     gap: 13%;
+     font-size: 14px;
+     font-weight: 400;
+}
+
+.links li {
+     margin-bottom: 10%;
+}
+
+.links a {
+     color:rgba(255, 255, 255, 0.7);
+}
+
+
+.lan{
+     width: 28px;
+     height: 28px;
+     padding-right: 5px;
+}
+.arr{
+     width: 28px;
+     height: 8px;
+}
+.lan1{
+     margin-top: 4%;
+     margin-left: 10.5%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 1px solid rgb(97, 95, 95);
+     font-size: 15px;
+     padding: 0px 10px 0px 10px;
+     color: white;
+     font-weight: bold;
+     background-color: rgba(23, 23, 23, 0.7);
+     border-radius: 4px;
+}
+.corp{
+     color: rgba(255, 255, 255, 0.7);     
+     margin-top: 2%;
+     padding-bottom: 2%;
+     margin-left: 10.5%;
+}
+.learn{
+     margin-left: 10.5%;
+     color: rgba(255, 255, 255, 0.7);
+     padding-bottom: 12%;
+}
+.learn a{
+     color: rgb(68, 142, 244);
+}
+
+
+
+/* =============================================
+   MEDIA QUERIES — RESPONSIVE DESIGN
+   ============================================= */
+
+/* Tablet: 768px – 1024px */
+@media (max-width: 1024px) {
+     nav {
+          width: 90vw;
+     }
+
+     .hero> :nth-child(1) {
+          font-size: 42px;
+     }
+
+     .hero> :nth-child(2),
+     .hero> :nth-child(3) {
+          font-size: 18px;
+     }
+
+     .main input {
+          padding: 25px 80px 27px 15px;
+     }
+
+     .boxes {
+          flex-wrap: wrap;
+          margin-left: 5%;
+          gap: 2%;
+     }
+
+     .squares {
+          width: 46%;
+          height: auto;
+          padding-bottom: 20px;
+     }
+
+     .icon1, .icon2, .icon3, .icon4 {
+          margin-top: 30px;
+          margin-left: 60%;
+     }
+
+     .scrolling {
+          width: 90%;
+          margin-left: 4%;
+     }
+
+     .head1 h2,
+     .head2 h2 {
+          margin-left: 5%;
+     }
+
+     .box3 h3 {
+          margin-left: 10%;
+     }
+
+     .input2 {
+          margin-left: 5%;
+     }
+
+     .qlist > li > h3 > button {
+          width: 96%;
+     }
+
+     .references {
+          margin-left: 5%;
+     }
+
+     .box3 {
+          margin-top: 50%;
+          margin-left: 5%;
+     }
+}
+
+/* Mobile: up to 767px */
+@media (max-width: 767px) {
+     nav {
+          width: 92vw;
+          height: 70px;
+     }
+
+     nav img {
+          width: 100px;
+     }
+
+     .hero> :nth-child(1) {
+          font-size: 28px;
+          padding-top: 10vh;
+     }
+
+     .hero> :nth-child(2) {
+          font-size: 16px;
+     }
+
+     .hero> :nth-child(3) {
+          font-size: 14px;
+     }
+
+     .input1 {
+          flex-direction: column;
+          align-items: stretch;
+          margin-left: 0;
+          width: 90%;
+     }
+
+     .main input {
+          padding: 25px 15px 27px 15px;
+          width: 100%;
+     }
+
+     .btn-red {
+          width: 100%;
+          justify-content: center;
+          font-size: 18px;
+          padding: 13px 20px 13px 20px;
+          height: auto;
+     }
+
+     .curve-in {
+          top: 15%;
+          height: 90px;
+     }
+
+     .curve-out {
+          height: 90px;
+     }
+
+     .head1 h2,
+     .head2 h2 {
+          margin-left: 4%;
+          font-size: 20px;
+     }
+
+     .scrolling {
+          width: 95%;
+          margin-left: 2%;
+          gap: 1.5em;
+     }
+
+     .card {
+          height: 12em;
+          flex: 0 0 9em;
+     }
+
+     .card span {
+          font-size: 70px;
+          height: 70px;
+          left: -18px;
+     }
+
+     .boxes {
+          flex-direction: column;
+          margin-left: 4%;
+          gap: 3%;
+     }
+
+     .squares {
+          width: 92%;
+          height: auto;
+          padding-bottom: 20px;
+     }
+
+     .icon1, .icon2, .icon3, .icon4 {
+          margin-top: 20px;
+          margin-left: 75%;
+          margin-bottom: 10px;
+     }
+
+     .box2 {
+          margin-left: 4%;
+     }
+
+     .qlist > li > h3 > button {
+          width: 100%;
+          font-size: 16px;
+          padding: 20px 16px;
+     }
+
+     .qlist {
+          height: auto;
+     }
+
+     .box3 {
+          margin-top: 20px;
+          margin-left: 4%;
+     }
+
+     .box3 h3 {
+          margin-left: 0;
+          text-align: center;
+          font-size: 14px;
+     }
+
+     .input2 {
+          flex-direction: column;
+          align-items: stretch;
+          margin-left: 0;
+          width: 92%;
+          gap: 10px;
+     }
+
+     .input2 input {
+          padding: 25px 15px 27px 15px;
+          width: 100%;
+     }
+
+     .references {
+          margin-left: 4%;
+     }
+
+     .box4 {
+          flex-wrap: wrap;
+          gap: 8%;
+     }
+
+     .links {
+          width: 40%;
+     }
+
+     .hero-buttons {
+          gap: 6px;
+     }
+
+     .btn {
+          font-size: 13px;
+          padding: 12px 10px;
+     }
+
+     .btn-red-sm {
+          font-size: 13px;
+          padding: 10px 10px;
+     }
+
+     .lan1 {
+          font-size: 13px;
+     }
+}
+
+/* Small Mobile: up to 480px */
+@media (max-width: 480px) {
+     .hero> :nth-child(1) {
+          font-size: 22px;
+     }
+
+     .card {
+          height: 10em;
+          flex: 0 0 7.5em;
+     }
+
+     .card span {
+          font-size: 55px;
+          left: -14px;
+     }
+
+     .squares {
+          width: 95%;
+     }
+
+     .box4 {
+          flex-direction: column;
+          gap: 5%;
+     }
+
+     .links {
+          width: 100%;
+     }
+}
