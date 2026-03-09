@@ -30,7 +30,7 @@ body {
      height: 100vh;
      width: 100%;
      background-color: black;
-     opacity: 0.80;
+     opacity: 0.73;
      position: absolute;
      top: 0;
 
@@ -86,13 +86,13 @@ nav button {
 
 .hero> :nth-child(3) {
      font-weight: 400;
-     font-size: 20px;
+     font-size: 16px;
      text-align: center;
 }
 
 .curve-in {
      height: 130px;
-     right: -5%;
+     right: -4%;
      left: -4%;
      overflow: hidden;
      width: 110vw;
@@ -107,7 +107,7 @@ nav button {
      border-top-right-radius: 50%;
      /* overflow: hidden;     */
      box-shadow: 0px 200px 0px 200px black;
-     top: 23%
+     top: 22%
 }
 
 
@@ -269,12 +269,10 @@ nav button {
      width: 12em;
      padding: 10px 10px 10px 10px;
      flex: 0 0 12em;
-     background-color: black;
+     /* background-color: black; */
      border-radius: .7em;
      text-align: center;
-     align-content: center;
-     z-index: 10;
-     opacity: 1;
+     align-content: center;     
 }
 .card img{
      position: relative;
@@ -541,7 +539,23 @@ ul {
 .learn a{
      color: rgb(68, 142, 244);
 }
-
+.warning{
+     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+     font-weight: 500;
+     position: relative;
+     font-style: italic;
+     align-items: center;
+     justify-content: center;
+     background-color: black;
+     margin-left: 22%;
+     margin-right: 8%;
+     padding-bottom: 2%;
+     color:white;
+     margin-top: 23%;
+     font-size: 20px;
+     z-index: 10;
+     opacity: 1;
+}
 
 
 /* =============================================
