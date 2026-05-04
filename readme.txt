@@ -5,10 +5,7 @@ Project focuses on standalone designs with some transitions that matches with cu
 In project, i have designed a Netflix India clone using HTML and CSS.
 
 #Live Demo
-[Click here to view](your-github-pages-link-here)
-
-#Preview
-(add a screenshot of your project here)
+https://viraj-9.github.io/netflix-india-clone/
 
 #Built With
 	- HTML5
